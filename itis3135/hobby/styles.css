@@ -100,3 +100,23 @@ h1, h2 {
 body:not(h1):not(h2) {
     font-family: 'Avantgarde', 'TeX Gyre Adventor', 'URW Gothic L', sans-serif;
 }
+
+/* Set display of .section elements to inline-block */
+.section {
+    display: inline-block;
+    margin-right: 20px;
+    margin-bottom: 20px; /* Add margin bottom to create space between lines */
+}
+
+/* Remove border from last .section */
+.section:last-child {
+    border-right: none;
+    margin-right: 0; /* Remove right margin for the last element */
+}
+
+/* Adjust width to fit two elements per line */
+@media (max-width: 768px) {
+    .section {
+        width: calc(50% - 10px); /* Adjust width for two elements per line */
+    }
+}
