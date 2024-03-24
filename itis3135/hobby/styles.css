@@ -6,15 +6,31 @@
 #D7D6D6 gray for background
  */
 
-.section-container {
+.section-container{
     display: flex;
 }
 
 .section {
+    display: inline-block;
     flex: 1;
     margin-right: 20px;
     padding-right: 20px;
     border-right: 1px solid #ccc;
+}
+.section:last-child {
+    border-right: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 10px; 
+}
+
+
+nav ul li::after {
+    content: '•';
+    margin-left: 10px;
+    color: #999; 
 }
 
 .section:last-child {
@@ -35,7 +51,7 @@
 .section::after {
     content: '•';
     margin-left: 10px;
-    color: #999; /* Adjust color as needed */
+    color: #999; 
 }
 
 body {
@@ -54,4 +70,7 @@ header{
 h2{
     color: #FFBF69; 
 
+}
+nav ul{
+    list-style-type: none;
 }
