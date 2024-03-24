@@ -84,6 +84,6 @@ nav a {
     color: #011627; /* Set link color to black */
     text-decoration: none; /* Remove underlines */
 }
-nav a:over {
+nav a:hover {
     color:#F71735 ;
 }
