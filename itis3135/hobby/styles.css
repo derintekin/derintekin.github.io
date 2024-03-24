@@ -28,6 +28,11 @@
     }
 }
 
+main > h2{
+    color:#99E1D9;
+
+}
+
 nav ul li {
     display: inline-block;
     margin-right: 10px; 
