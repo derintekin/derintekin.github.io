@@ -79,3 +79,8 @@ h2{
 nav ul{
     list-style-type: none;
 }
+
+nav a {
+    color: #011627; /* Set link color to black */
+    text-decoration: none; /* Remove underlines */
+}
