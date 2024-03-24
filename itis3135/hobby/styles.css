@@ -56,12 +56,12 @@ nav ul li::after {
 
 .section h2 {
     margin-bottom: 10px;
-    color: #F71735;
+    color: #FFBF69;
 }
 
 .section p {
     margin-bottom: 20px;
-    color:#FFBF69 
+    color:#FFBF69;
 }
 
 .section::after {
@@ -87,7 +87,7 @@ header{
 }
 
 h2{
-    color: #FFBF69;
+    color: #99E1D9;
     
 
 }
