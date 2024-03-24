@@ -25,6 +25,11 @@ nav ul li {
     display: inline-block;
     margin-right: 10px; 
 }
+nav ul li:not(:last-child)::after {
+    content: '•';
+    margin-left: 10px;
+    color: #999; /* Adjust color as needed */
+}
 
 
 nav ul li::after {
