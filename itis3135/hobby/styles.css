@@ -109,7 +109,7 @@ h1, h2 {
 
 
 body:not(h1):not(h2) {
-    font-family: 'Avantgarde', 'TeX Gyre Adventor', 'URW Gothic L', sans-serif;
+    font-family: optima, sans-serif;
 }
 
 
