@@ -6,9 +6,7 @@
 #D7D6D6 gray for background
  */
 
-.section-container{
-    display: flex;
-}
+
 
 .section {
     display: block;
@@ -17,6 +15,7 @@
     margin-bottom: 20px;
     padding-right: 20px;
     border-right: 1px solid #ccc;
+    box-sizing: border-box;
 }
 .section:last-child {
     border-right: none;
