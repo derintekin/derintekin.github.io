@@ -16,6 +16,7 @@
     padding-right: 20px;
     border-right: 1px solid #ccc;
     box-sizing: border-box;
+    color: #99ED;
 }
 .section:last-child {
     border-right: none;
@@ -28,10 +29,7 @@
     }
 }
 
-main > div > h2{
-    color:#99ED;
 
-}
 
 nav ul li {
     display: inline-block;
