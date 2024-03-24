@@ -1,3 +1,10 @@
+/* colors i like
+#011627 dark navy/black
+#FFBF69 peach
+#99E1D9 turqoise
+#F71735 RED
+#D7D6D6 gray for background
+ */
 
 .section-container {
     display: flex;
@@ -28,4 +35,17 @@
     content: '•';
     margin-left: 10px;
     color: #999; /* Adjust color as needed */
+}
+
+body {
+    background-color: #D7D6D6;
+}
+
+h1{
+    color: #011627;
+}
+
+h2{
+    color: #FFBF69;
+
 }
