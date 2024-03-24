@@ -19,9 +19,11 @@
     color: #3C1642;
 }
 .section img {
+
     float: right; 
+    margin-top: 2px;
     margin-left: 20px; 
-    max-width: 70px; 
+    max-width: 110px; 
     height: auto; 
 }
 .section:last-child {
