@@ -60,24 +60,24 @@ nav ul li::after {
 }
 
 body {
-    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+
     background-color: #D7D6D6;
 }
 
 h1{
     color: #011627;
     text-align: center;
-    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+
 }
 header{
     text-align: center;
-    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+
 
 }
 
 h2{
     color: #FFBF69;
-    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+    
 
 }
 nav ul{
