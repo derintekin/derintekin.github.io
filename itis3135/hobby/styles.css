@@ -60,6 +60,7 @@ nav ul li::after {
 }
 
 body {
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
     background-color: #D7D6D6;
 }
 
