@@ -63,13 +63,14 @@ nav ul li::after {
 }
 
 .section h2 {
-    margin-bottom: 10px;
+    margin-right: 20px;
     color: #E57A44;
+    flex: 1;
 }
 
 .section p {
-    margin-bottom: 20px;
     color:#422040;
+    flex: 1;
 }
 
 .section::after {
