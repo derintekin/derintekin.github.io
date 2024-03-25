@@ -128,5 +128,8 @@ body:not(h1):not(h2) {
     font-family: optima, sans-serif;
 }
 
-
+ul {
+    list-style: none; 
+    padding-left: 0; 
+}
 
