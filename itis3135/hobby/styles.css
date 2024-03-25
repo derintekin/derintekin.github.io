@@ -6,8 +6,6 @@
 #D7D6D6 gray for background
  */
 
-
-
 .section {
     display: block;
     flex: 1;
@@ -36,8 +34,6 @@
         width: 100%;
     }
 }
-
-
 
 nav ul li {
     display: inline-block;
