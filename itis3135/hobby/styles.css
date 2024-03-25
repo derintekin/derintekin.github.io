@@ -78,6 +78,7 @@ nav ul li::after {
 .section p {
     color:#422040;
     flex: 1;
+    text-align: center;
 }
 
 .section::after {
@@ -153,6 +154,10 @@ ul {
 .playlist-links a {
     text-decoration: none; 
     margin: 0 10px; 
+}
+
+p{
+    text-align: center;
 }
 
 
