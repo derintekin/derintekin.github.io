@@ -137,5 +137,22 @@ ul {
     top: 50px;
     right: 50px; 
 }
+.playlist-links {
+    display: flex;
+    justify-content: space-around; 
+    align-items: center; 
+    margin-top: 20px; 
+}
+
+.playlist-links img {
+    width: 100px;
+    height: auto; 
+}
+
+.playlist-links a {
+    text-decoration: none; 
+    margin: 0 10px; 
+}
+
 
 
