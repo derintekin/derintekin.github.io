@@ -34,10 +34,12 @@
         width: 100%;
     }
 }
-main > a {
+a[href="https://open.spotify.com/playlist/6dVLR9ASalgAPkn5fVsfpP?si=3faca872fe144d04"] {
+   
+    color: #629460; 
     text-decoration: none; 
-    color: #011627;
-
+    font-weight: bold; 
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 main a:hover{
