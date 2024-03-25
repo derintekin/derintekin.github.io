@@ -131,6 +131,7 @@ body:not(h1):not(h2) {
 ul {
     list-style: none; 
     padding-left: 0; 
+    
 }
 .fixed-image {
     position: fixed; 
