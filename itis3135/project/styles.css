@@ -100,6 +100,40 @@ body {
     padding: 10px;
   }
 
+  /* Style the links to look like buttons */
+nav a {
+    font-family: Monaco, monospace;
+    background-color: #9bc995; /* Light green */
+    color: #333;
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 0 5px;
+    text-decoration: none; /* Remove default underline */
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  /* Hover effect */
+  nav a:hover {
+    background-color: #c3e0d9; /* Light turquoise on hover */
+    color: white;
+  }
+  
+  /* Active link */
+  nav a.active {
+    background-color: #f8bbd0; /* Light pink when clicked */
+    color: white;
+  }
+  
+  /* Adjusted styles for the pronova logo */
+  #pronova {
+    width: 100px;
+    height: auto;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 1001;
+  }
   
 
 
