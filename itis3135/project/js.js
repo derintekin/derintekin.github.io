@@ -1,18 +1,16 @@
 document.addEventListener("DOMContentLoaded", function() {
-    document.getElementById("homeBtn").addEventListener("click", function() {
-      window.location.href = "index.html";
-    });
+    const buttons = document.querySelectorAll("nav button");
   
-    document.getElementById("aboutBtn").addEventListener("click", function() {
-      window.location.href = "about.html";
-    });
+    buttons.forEach(function(button) {
+      button.addEventListener("click", function() {
+        // Remove 'active' class from all buttons
+        buttons.forEach(function(btn) {
+          btn.classList.remove("active");
+        });
   
-    document.getElementById("productsBtn").addEventListener("click", function() {
-      window.location.href = "products.html";
-    });
-  
-    document.getElementById("contactBtn").addEventListener("click", function() {
-      window.location.href = "contact.html";
+        // Add 'active' class to the clicked button
+        this.classList.add("active");
+      });
     });
   });
   

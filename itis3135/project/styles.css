@@ -1,28 +1,59 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: lightgreen;
+    font-family: Monaco, monospace;
+    background-color: #f0f4f8; /* Light blue */
+    margin: 0;
   }
   
   header {
-    background-color: turquoise;
-    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #40bfaf; /* Turquoise */
+    padding: 10px 0;
+    z-index: 1000;
+  }
+  
+  nav {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: center;
   }
   
   nav button {
-    background-color: limegreen;
-    color: white;
+    font-family: Monaco, monospace; /* Monaco font for buttons */
+    background-color: #9bc995; /* Light green */
+    color: #333;
     border: none;
     padding: 10px 20px;
-    margin-right: 10px;
+    margin: 0 5px;
     cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+  }
+  
+  nav button:hover {
+    background-color: #c3e0d9; /* Light turquoise on hover */
+    color: white;
+  }
+  
+  nav button.active {
+    background-color: #f8bbd0; /* Light pink when clicked */
+    color: white;
   }
   
   main {
+    margin-top: 60px; /* Adjust based on the height of the fixed header */
+  }
+  
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
     padding: 20px;
   }
   
-  /* Add more styles as needed */
+  .section {
+    background-color: #edf7f2; /* Lighter blue */
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
   
