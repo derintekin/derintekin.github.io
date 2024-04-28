@@ -23,3 +23,10 @@ h2 {
     text-align: center;
 
 }
+#salep{
+    width: 60%; /* 1/6 of the page */
+    display: block;
+    margin: 0 auto; /* Centers the image */
+    border-radius: 5px; /* Slightly rounded corners */
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2); /* Slight shadow */
+}
