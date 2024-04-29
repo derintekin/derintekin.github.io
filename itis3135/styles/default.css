@@ -24,9 +24,9 @@ h2 {
 
 }
 #salep{
-    width: 60%; /* 1/6 of the page */
+    width: 60%; 
     display: block;
-    margin: 0 auto; /* Centers the image */
-    border-radius: 3px; /* Slightly rounded corners */
-    box-shadow: 2px 2px 5px rgba(0,0,0,0.2); /* Slight shadow */
+    margin: 0 auto; 
+    border-radius: 3px; 
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2); 
 }
