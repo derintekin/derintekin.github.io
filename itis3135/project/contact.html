@@ -33,6 +33,11 @@
       <textarea id="message" name="message" rows="4"></textarea><br>
       <input type="button" value="Submit" onclick="sendFormData()">
     </form>
+    <div id="confirmationBanner" style="display:none;">
+        <img src="checkmark.png" alt="Checkmark" style="vertical-align: middle;">
+        <span>Your request has been submitted.</span>
+    </div>
+    
     <script>
       function sendFormData() {
         var formData = {
