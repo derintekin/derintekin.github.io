@@ -40,5 +40,15 @@ section a:hover {
   display: inline-block;
 }
 
+.products-products img{
+  width: 60%; 
+  height: auto;
+  margin: auto;
+  border-radius: 3px; 
+  align-items: center;
+  display: inline-block;
+
+}
+
 
 
