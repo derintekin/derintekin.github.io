@@ -14,26 +14,46 @@
       <a href="index.html"><img src="pronova.png" alt="Pronova Logo" style="height: 50px;"></a>
     </div>
     <nav>
-      <button id="homeBtn">Home</button>
-      <button id="aboutBtn">About Us</button>
-      <button id="productsBtn">Products</button>
-      <button id="contactBtn">Contact Us</button>
-    </nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="services.html">Services</a>
+      <a href="products.html">Products</a>
+      <a href="contact.html">Contact Us</a>
+  </nav>
   </header>
   <main>
     <h1>Contact Us</h1>
     <p>Have a question or need assistance with your hydroponic system? Get in touch with us using the form below:</p>
-    <form action="submit.php" method="post">
+    <form id="contactForm">
       <label for="name">Name:</label><br>
       <input type="text" id="name" name="name"><br>
       <label for="email">Email:</label><br>
       <input type="email" id="email" name="email"><br>
       <label for="message">Message:</label><br>
       <textarea id="message" name="message" rows="4"></textarea><br>
-      <input type="submit" value="Submit">
+      <input type="button" value="Submit" onclick="sendFormData()">
     </form>
-    <img src="hydro3.jpeg" alt="image3" id="image3">
-  </main>
+    <script>
+      function sendFormData() {
+        var formData = {
+          name: document.getElementById('name').value,
+          email: document.getElementById('email').value,
+          message: document.getElementById('message').value
+        };
+        $.ajax({
+          url: 'submit.php',
+          type: 'POST',
+          data: formData,
+          success: function(response) {
+            alert('Form submitted successfully!');
+          },
+          error: function() {
+            alert('An error occurred.');
+          }
+        });
+      }
+    </script>
+</main>
   <script src="script.js"></script>
 </body>
 

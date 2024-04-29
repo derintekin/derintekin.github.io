@@ -10,7 +10,7 @@ header, footer {
   text-align: center;
 }
 nav {
-  background-color: #00796b;
+  background-color: green;
   color: white;
   padding: 10px 20px;
   text-align: center;
@@ -20,3 +20,25 @@ nav a {
   padding: 0 15px;
   text-decoration: none;
 }
+section a {
+  color: #00a3cc; /* Change link color */
+  text-decoration: none; 
+  font-weight: bold; 
+}
+
+/* CSS for link hover effect within section elements */
+section a:hover {
+  color: #004080; /* Change color on hover */
+}
+
+.about-projects img {
+  width: 60%; 
+  height: auto;
+  margin: auto;
+  border-radius: 3px; 
+  align-items: center;
+  display: inline-block;
+}
+
+
+
