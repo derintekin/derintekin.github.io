@@ -66,6 +66,16 @@ section a:hover {
   margin-right: 10px;
 }
 
+footer a {
+  color: #4CAF50;
+  text-decoration: none;
+
+
+}
+footer a:hover {
+  color: #3C8D40; 
+}
+
 
 
 
