@@ -1,7 +1,7 @@
 body {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   background-color: #f4f4f4;
-  color: #333;
+  color: rgb(97, 96, 96);
 }
 header, footer {
   background-color: rgb(147, 229, 147);
@@ -74,6 +74,9 @@ footer a {
 }
 footer a:hover {
   color: #3C8D40; 
+}
+body {
+  background-color: #d5f9fe; /* Light blue background */
 }
 
 
