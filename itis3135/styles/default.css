@@ -62,5 +62,41 @@ caption {
     font-size: 18px; /* Larger font size for the caption for emphasis */
     margin: 10px; /* Spacing around the caption */
 }
+input, select, button {
+    padding: 8px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select {
+    width: 300px; /* Set size to make inputs uniform */
+}
+
+button {
+    background-color: gray; /* Dark background for the button */
+    color: white; /* Light text color */
+    cursor: pointer; /* Cursor indicates button */
+    border: none; /* Remove default border */
+}
+
+button:hover {
+    background-color: #555; /* Lighten button on hover for interactivity */
+}
+
+fieldset {
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+legend {
+    padding: 0 10px;
+    color: dimgray;
+    font-weight: bold;
+}
 
 /* Specific styling can be added to emphasize certain rows or cells, or adjust alignment */
