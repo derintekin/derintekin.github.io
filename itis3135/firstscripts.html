@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Derin Tekin's Dainty Tiger || ITIS 3135 Home</title>
+    <link rel="stylesheet" href="styles/default.css">
+    <script src="scripts/defaultscripts.js"></script>
+    <script src="scripts/firstscripts.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Derin Tekin's Dainty Tiger || ITIS 3135</h1>
+        <nav id="main-nav">
+            <a href="./">Home</a> || 
+            <a href="introduction.html">Introduction</a> || 
+            <a href="contract.html">Contract</a> ||
+            <a href="about.html">About the Dainty Tiger</a> ||
+            <a href="firmhome.html">Dainty Tiger Home Page</a> ||
+            <a href="tables.html">Employee Tables</a> ||
+            <a href="form.html">Form</a> || 
+            <a href="project/index.html">Client Project</a> || 
+            <a href="firstscripts.html">First JavaScript</a>
+        </nav>
+        <nav id="second-nav">
+            <a href="stuff/crap.html">Crappy</a> ||
+
+                <a href="#" onclick="displayTimeAndDate()">Home</a>
+                <!-- Add more menu items as needed -->
+      
+        </nav>
+    </header>
+    <!-- Common Header -->
+    <header>
+        <h1>Welcome to Our Animal Brand Company</h1>
+        <nav>
+            
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <h2>Time, Day, and Date</h2>
+        <h3 id="timeAndDate"></h3>
+
+        <h2>User Information</h2>
+        <form id="userForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="feeling">How are you feeling?</label>
+            <input type="text" id="feeling" name="feeling" required><br><br>
+
+            <button type="button" onclick="greetUser()">Submit Name and Feeling</button>
+        </form>
+
+        <h3 id="greeting"></h3>
+        <h3 id="favoriteNumberResponse"></h3>
+
+        <h2>Random Cat Type</h2>
+        <h3 id="catType"></h3>
+        <button type="button" onclick="randomizeCatType()">Randomize Cat Type</button>
+    </main>
+
+    <!-- Common Footer -->
+    <footer>
+        <p>&copy; 2027 Our Animal Brand Company. All rights reserved.</p>
+    </footer>
+</body>
+</html>
