@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Derin Tekin's Dainty Tiger || ITIS 3135 Home</title>
+    <link rel="stylesheet" href="styles/default.css">
+</head>
+
+<body>
+    <header>
+        <div data-include="components/header.html"></div>
+
+    </header>
+
+    <main>
+        <main>
+            <h2>BYO Intro</h2>
+            <h3>Time to BYO Intro page, please fill out the form below so we can create your own page.</h3>
+            <form id="intro-form" action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br>
+    
+                <label for="mascot">Mascot:</label>
+                <input type="text" id="mascot" name="mascot" required><br>
+    
+                <label for="image">Image:</label>
+                <input type="file" id="image" name="image" accept="image/png, image/jpeg" required><br>
+                <button type="button" onclick="loadImage()">CLICK HERE TO LOAD</button>
+                <div id="loadImage">
+                    
+                </div>
+    
+                <label for="image-caption">Image Caption:</label>
+                <input type="text" id="image-caption" name="image-caption" required><br>
+    
+                <label for="personal-background">Personal Background:</label>
+                <textarea id="personal-background" name="personal-background" required></textarea><br>
+    
+                <label for="professional-background">Professional Background:</label>
+                <textarea id="professional-background" name="professional-background" required></textarea><br>
+    
+                <label for="academic-background">Academic Background:</label>
+                <textarea id="academic-background" name="academic-background" required></textarea><br>
+    
+                <label for="web-development-background">Background in Web Development:</label>
+                <textarea id="web-development-background" name="web-development-background" required></textarea><br>
+    
+                <label for="primary-computer-platform">Primary Computer Platform:</label>
+                <input type="text" id="primary-computer-platform" name="primary-computer-platform" required><br>
+    
+                <label for="courses">Courses currently taking:</label>
+                <div id="courses-container">
+                    <input type="text" class="course" name="courses[]" required>
+                    <button type="button" onclick="addCourseField()">Add Course</button>
+                </div><br>
+    
+                <label for="funny-thing">Funny thing?</label>
+                <textarea id="funny-thing" name="funny-thing"></textarea><br>
+    
+                <label for="anything-else">Anything else?</label>
+                <textarea id="anything-else" name="anything-else"></textarea><br>
+    
+                <input type="checkbox" id="agreement" name="agreement" required>
+                <label for="agreement">I understand that what is on this page is not password protected and I will not put anything here that I don’t want publicly available.</label><br>
+    
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </form>
+    
+            <p id="reset-link">Click <a href="#" onclick="resetForm()">here</a> to reset the form.</p>
+        </main>
+    
+    </main>
+    <footer>
+        <div data-include="components/footer.html"></div>
+    </footer>
+
+
+    <script>
+        document.getElementById("validation_link_html").setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
+        document.getElementById("validation_link_css").setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+    </script>
+    <script src="scripts/buildintro.js"></script>
+</body>
+
+</html>
