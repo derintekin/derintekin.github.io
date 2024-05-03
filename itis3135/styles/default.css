@@ -30,3 +30,37 @@ h2 {
     border-radius: 3px; 
     box-shadow: 2px 2px 5px rgba(0,0,0,0.2); 
 }
+/* General table styling */
+table {
+    width: 100%;
+    border-collapse: collapse; /* Ensures that the borders between cells are merged */
+    margin: 20px 0; /* Adds space around the table */
+    font-size: 16px; /* Sets a readable default font size */
+}
+
+th, td {
+    border: 1px solid #ccc; /* Adds a light grey border around table cells */
+    padding: 8px 12px; /* Adds space inside the cells */
+    text-align: left; /* Aligns text to the left within cells */
+}
+
+th {
+    background-color: #f4f4f4; /* Light grey background for header cells */
+    color: #333; /* Dark text color for contrast */
+}
+
+/* Zebra striping for table rows */
+tr:nth-child(even) {
+    background-color: #f9f9f9; /* Very light grey for even rows */
+}
+
+tr:hover {
+    background-color: #eef; /* Light blue background on row hover for better interaction visibility */
+}
+
+caption {
+    font-size: 18px; /* Larger font size for the caption for emphasis */
+    margin: 10px; /* Spacing around the caption */
+}
+
+/* Specific styling can be added to emphasize certain rows or cells, or adjust alignment */
