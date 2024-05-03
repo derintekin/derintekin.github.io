@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,85 +8,61 @@
     <title>Derin Tekin's Dainty Tiger || ITIS 3135 Home</title>
     <link rel="stylesheet" href="styles/default.css">
 </head>
+
 <body>
     <header>
-        <h1>Derin Tekin's Dainty Tiger || ITIS 3135</h1>
-        <nav id="main-nav">
-            <a href="./">Home</a> || 
-            <a href="introduction.html">Introduction</a> || 
-            <a href="contract.html">Contract</a> ||
-            <a href="about.html">About the Dainty Tiger</a> ||
-            <a href="firmhome.html">Dainty Tiger Home Page</a> ||
-            <a href="tables.html">Employee Tables</a> ||
-            <a href="form.html">Form</a> || 
-            <a href="project/index.html">Client Project</a> || 
-            <a href="firstscripts.html">First JavaScript</a>
-        </nav>
-        <nav id="second-nav">
-            <a href="stuff/crap.html">Crappy</a>
-        </nav>
+        <div data-include="components/header.html"></div>
+
     </header>
-    
+
     <main>
         <h2>Contact Us</h2>
         <form action="#" method="post">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required placeholder="Enter your name" size="30">
-    
+
             <label for="phone">Phone Number:</label>
-            <input type="tel" id="phone" name="phone" required placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
-    
+            <input type="tel" id="phone" name="phone" required placeholder="123-456-7890"
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+
             <label for="email">Email Address:</label>
             <input type="email" id="email" name="email" required placeholder="email@example.com">
-    
+
             <fieldset>
                 <legend>Services Interested In:</legend>
                 <label><input type="checkbox" name="services" value="webdev"> Web Development</label>
                 <label><input type="checkbox" name="services" value="appdev"> App Development</label>
                 <label><input type="checkbox" name="services" value="seo"> SEO Services</label>
             </fieldset>
-    
+
             <fieldset>
                 <legend>Contact Preference:</legend>
                 <label><input type="radio" name="contact_pref" value="email" checked> Email</label>
                 <label><input type="radio" name="contact_pref" value="phone"> Phone</label>
             </fieldset>
-    
+
             <label for="time">Best Time to Contact:</label>
             <select id="time" name="time">
                 <option>Morning</option>
                 <option>Afternoon</option>
                 <option>Evening</option>
             </select>
-    
+
             <button type="reset">Reset</button>
             <button type="submit">Submit</button>
         </form>
     </main>
-    
+
     <footer>
-        <a href="http://webpages.uncc.edu/dtekin1">UNC Charlotte</a> || 
-        <a href="http://www.github.com/derintekin/derintekin.github.io">GitHub</a> || 
-        <a href="http://derintekin.github.io">GitHub Pages</a> || 
-        <a href="http://derintekin.github.io/itis3135">Course GitHub Pages</a> || 
-        <a href="http://www.freecodecamp.org/derintekin">freeCodeCamp</a> || 
-        <a href="https://www.codecademy.com/profiles/deroli">Codecademy</a> || 
-        <a href="https://www.linkedin.com/in/derintekin/">LinkedIn</a>
-        <p>Designed by <a href="/itis3135/daintytiger.com/index.html">Dainty Tiger Enterprises</a> &copy; 2024, 
-            CERTIFIED IN <a href="https://www.freecodecamp.org/certification/derintekin/responsive-web-design">RWD</a> 
-            and <a href="https://www.freecodecamp.org/certification/derintekin/javascript-algorithms-and-data-structures-v8">JavaScript</a></p>
-       </footer>
-    <a href="https://validator.w3.org/check?uri=referer" id="validation_link_html">
-        <img style="border:0;width:88px;height:31px" src="https://mytienhoang.github.io/itis3135/z_archives/html_validation.png" alt="Valid HTML!">
-    </a>
-    <a href="https://jigsaw.w3.org/css-validator/check/referer" id="validation_link_css">
-        <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!">
-    </a>
+        <div data-include="components/footer.html"></div>
+    </footer>
+
 
     <script>
-        document.getElementById("validation_link_html").setAttribute("href","https://validator.w3.org/check?uri=" + location.href);
-        document.getElementById("validation_link_css").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+        document.getElementById("validation_link_html").setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
+        document.getElementById("validation_link_css").setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
     </script>
+    <script src="scripts/HTMLInclude.min.js"></script>
 </body>
-</html>
 
+</html>

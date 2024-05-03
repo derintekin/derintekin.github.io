@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,39 +10,25 @@
     <script src="scripts/defaultscripts.js"></script>
     <script src="scripts/firstscripts.js"></script>
 </head>
+
 <body>
     <header>
-        <h1>Derin Tekin's Dainty Tiger || ITIS 3135</h1>
-        <nav id="main-nav">
-            <a href="./">Home</a> || 
-            <a href="introduction.html">Introduction</a> || 
-            <a href="contract.html">Contract</a> ||
-            <a href="about.html">About the Dainty Tiger</a> ||
-            <a href="firmhome.html">Dainty Tiger Home Page</a> ||
-            <a href="tables.html">Employee Tables</a> ||
-            <a href="form.html">Form</a> || 
-            <a href="project/index.html">Client Project</a> || 
-            <a href="firstscripts.html">First JavaScript</a>
-        </nav>
-        <nav id="second-nav">
-            <a href="stuff/crap.html">Crappy</a> ||
+        <script src="scripts/HTMLInclude.min.js"></script>
 
-                <a href="#" onclick="displayTimeAndDate()">Home</a>
-                <!-- Add more menu items as needed -->
-      
-        </nav>
+
+
     </header>
-    <!-- Common Header -->
+
     <header>
         <h1>Welcome to Our Animal Brand Company</h1>
         <nav>
-            
+
         </nav>
     </header>
 
-    <!-- Main Content -->
+
     <main>
-        <h2>Time, Day, and Date</h2>
+
         <h3 id="timeAndDate"></h3>
 
         <h2>User Information</h2>
@@ -63,9 +50,15 @@
         <button type="button" onclick="randomizeCatType()">Randomize Cat Type</button>
     </main>
 
-    <!-- Common Footer -->
+
     <footer>
-        <p>&copy; 2027 Our Animal Brand Company. All rights reserved.</p>
+        <div data-include="components/footer.html"></div>
     </footer>
+    <script>
+        document.getElementById("validation_link_html").setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
+        document.getElementById("validation_link_css").setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+    </script>
+    <script src="scripts/HTMLInclude.min.js"></script>
 </body>
+
 </html>
