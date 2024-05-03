@@ -1,44 +1,71 @@
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f9f9f9;
-    color: #333;
+    font-family: Arial, sans-serif;
+    color: #4A235A; /* Soft purple for text */
+    background-color: #FAEBEFFF; /* Soft pink background */
     margin: 0;
     padding: 0;
 }
 header {
-    background-color: lightcoral;
-    color: #ffffff;
-    padding: 20px 10px;
+    background-color: #6C3483; /* Deeper purple for header background */
+    color: #FADBD8FF; /* Very soft pink for header text */
+    padding: 20px;
     text-align: center;
+    position: relative;
+}
+header img {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    width: 50px;
 }
 main {
     padding: 20px;
-}
-section {
-    margin: 20px 0;
-    padding: 10px;
-    background-color: #ffffff;
-    border: 1px solid #ddd;
-}
-footer {
-    background-color: #202020;
-    color: #ffffff;
     text-align: center;
-    padding: 10px;
-}
-h1, h2 {
-    color: #005555;
 }
 ul {
     list-style-type: none;
     padding: 0;
 }
-a {
+ul li:before {
+    content: '✓';
+    margin-right: 5px;
+    color: #D7BDE2FF; /* Soft purple */
+}
+footer {
+    background-color: plum; /* Deeper purple to match the header */
+    color: #FADBD8FF; /* Soft pink text for contrast */
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+form {
+    background-color: #FEF9E7FF; /* Soft yellowish background for forms */
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+input, select, button {
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #A9CCE3FF; /* Soft blue border */
+    width: 90%;
+}
+button {
+    background-color: #a67cb6; /* Soft purple for buttons */
+    color: white;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #884EA0; /* Slightly darker purple on hover */
+}
+a{
+    color: rgb(130, 57, 5);
     text-decoration: none;
-    color: rgb(139, 0, 49);
-
 }
 a:hover{
-    color: plum;
-
+    color: lightcoral;
 }
