@@ -1,67 +1,69 @@
-body{
-    background-color:lavender;
+body {
+    background-color: lavender;
     text-align: center;
     color: dimgray;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-a{
-    color:darkorchid;
+
+a {
+    color: darkorchid;
     text-decoration: dashed;
 }
+
 a:hover {
     color: lightpink;
-
 }
 
 main {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
     text-align: left;
-    margin-left: 20%;
-    margin-right: 20%;
 }
 
 h2 {
     text-align: center;
+}
 
-}
-#salep{
-    width: 60%; 
+#salep {
+    width: 60%;
     display: block;
-    margin: 0 auto; 
-    border-radius: 3px; 
-    box-shadow: 2px 2px 5px rgba(0,0,0,0.2); 
+    margin: 0 auto;
+    border-radius: 3px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
-/* General table styling */
+
 table {
     width: 100%;
-    border-collapse: collapse; /* Ensures that the borders between cells are merged */
-    margin: 20px 0; /* Adds space around the table */
-    font-size: 16px; /* Sets a readable default font size */
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 16px;
 }
 
 th, td {
-    border: 1px solid #ccc; /* Adds a light grey border around table cells */
-    padding: 8px 12px; /* Adds space inside the cells */
-    text-align: left; /* Aligns text to the left within cells */
+    border: 1px solid #ccc;
+    padding: 8px 12px;
+    text-align: left;
 }
 
 th {
-    background-color: #f4f4f4; /* Light grey background for header cells */
-    color: #333; /* Dark text color for contrast */
+    background-color: #f4f4f4;
+    color: #333;
 }
 
-/* Zebra striping for table rows */
 tr:nth-child(even) {
-    background-color: #f9f9f9; /* Very light grey for even rows */
+    background-color: #f9f9f9;
 }
 
 tr:hover {
-    background-color: #eef; /* Light blue background on row hover for better interaction visibility */
+    background-color: #eef;
 }
 
 caption {
-    font-size: 18px; /* Larger font size for the caption for emphasis */
-    margin: 10px; /* Spacing around the caption */
+    font-size: 18px;
+    margin: 10px;
 }
+
 input, select, button {
     padding: 8px;
     margin: 5px;
@@ -73,18 +75,18 @@ input[type="text"],
 input[type="email"],
 input[type="tel"],
 select {
-    width: 300px; /* Set size to make inputs uniform */
+    width: 100%;
 }
 
 button {
-    background-color: gray; /* Dark background for the button */
-    color: white; /* Light text color */
-    cursor: pointer; /* Cursor indicates button */
-    border: none; /* Remove default border */
+    background-color: gray;
+    color: white;
+    cursor: pointer;
+    border: none;
 }
 
 button:hover {
-    background-color: #555; /* Lighten button on hover for interactivity */
+    background-color: #555;
 }
 
 fieldset {
@@ -99,4 +101,21 @@ legend {
     font-weight: bold;
 }
 
-/* Specific styling can be added to emphasize certain rows or cells, or adjust alignment */
+@media (max-width: 600px) {
+    main, #salep, input[type="text"], input[type="email"], input[type="tel"], select {
+        width: 95%;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 980px) {
+    #salep, input[type="text"], input[type="email"], input[type="tel"], select {
+        width: 80%;
+    }
+}
+
+@media (min-width: 981px) {
+    #salep {
+        width: 60%;
+    }
+}
