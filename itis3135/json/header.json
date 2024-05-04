@@ -12,7 +12,8 @@
         {"name": "Build Your Own Intro", "url": "buildintro.html"},
         {"name": "Calculator", "url": "calculator_try.html"},
         {"name": "Arrays", "url": "arrays.html"},
-        {"name": "Drawing", "url": "drawing.html"}
+        {"name": "Drawing", "url": "drawing.html"},
+        {"name": "Slideshow", "url": "slideshow.html"}
     ],
     "secondNav": [
         {"name": "Crappy", "url": "stuff/crap.html"}
