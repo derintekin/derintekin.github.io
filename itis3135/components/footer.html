@@ -19,5 +19,14 @@
 <a href="https://jigsaw.w3.org/css-validator/check/referer" id="validation_link_css">
     <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!">
 </a>
+<a href="#" id="validation_link_disability">
+    <img style="border:0;width:88px;height:31px" src="images/button_validation_wcag.png" alt="Valid Disability/Accessibility Design!">
+</a>
 
-<button type = "button" onclick = 	"document.querySelectorAll('link[rel=stylesheet]').forEach(function(e)	{e.setAttribute('href', '');});">No CSS</button>
+<button type="button" onclick="document.querySelectorAll('link[rel=stylesheet]').forEach(function(e) {e.setAttribute('href', '');});">No CSS</button>
+
+<script>
+    document.getElementById("validation_link_html").setAttribute("href", "https://validator.w3.org/check?uri=referer");
+    document.getElementById("validation_link_css").setAttribute("href", "https://jigsaw.w3.org/css-validator/check/referer");
+    document.getElementById("validation_link_disability").setAttribute("href", "https://wave.webaim.org/report#/" + location.href);
+</script>
