@@ -13,7 +13,8 @@
         {"name": "Calculator", "url": "calculator_try.html"},
         {"name": "Arrays", "url": "arrays.html"},
         {"name": "Drawing", "url": "drawing.html"},
-        {"name": "Slideshow", "url": "slideshow.html"}
+        {"name": "Slideshow", "url": "slideshow.html"},
+        {"name": "Website Evaluation", "url": "websiteevaluation.html"}
     ],
     "secondNav": [
         {"name": "Crappy", "url": "stuff/crap.html"}
