@@ -1,6 +1,6 @@
-document.addEventListener("DOMContentLoaded", function () {
-    loadNavItems('json/header.json');
-    loadFooter('json/footer.json');
+document.addEventListener("DOMContentLoaded", function() {
+    loadNavItems('json/header.json'); // Assuming you have this function from before, adjusted JSON path as needed
+    loadFooter('json/footer.json');    // Adjusted JSON path as needed
 
     function loadNavItems(jsonFile) {
         fetch(jsonFile)
@@ -12,77 +12,61 @@ document.addEventListener("DOMContentLoaded", function () {
             .catch(error => console.error("Failed to load navigation data:", error));
     }
 
-    function loadFooter() {
-        fetch('json/footer.json')  // Assuming your JSON file is stored in the 'data' directory
+    function appendLinks(items, container) {
+        items.forEach(item => {
+            const link = document.createElement("a");
+            link.textContent = item.name;
+            link.href = item.url;
+            container.appendChild(link);
+            container.appendChild(document.createTextNode(" || "));
+        });
+        // Optionally remove the last separator
+        if (container.lastChild.nodeValue === " || ") {
+            container.removeChild(container.lastChild);
+        }
+    }
+
+    function loadFooter(jsonFile) {
+        fetch(jsonFile)
             .then(response => response.json())
             .then(data => {
                 const footerContainer = document.getElementById('footer-container');
 
-                // Process links and certifications
+                // Load links
                 data.links.forEach(link => {
                     const a = document.createElement('a');
                     a.href = link.url;
                     a.textContent = link.name;
                     footerContainer.appendChild(a);
                     footerContainer.appendChild(document.createTextNode(" || "));
-
-                    if (link.certifications) {
-                        const p = document.createElement('p');
-                        p.innerHTML = link.description; // using innerHTML to include HTML entities like ©
-                        footerContainer.appendChild(p);
-
-                        link.certifications.forEach(cert => {
-                            const certLink = document.createElement('a');
-                            certLink.href = cert.url;
-                            certLink.textContent = cert.name;
-                            footerContainer.appendChild(certLink);
-                            footerContainer.appendChild(document.createTextNode(" || "));
-                        });
-                    }
                 });
 
-                // Process validation tools
+                // Load description with embedded links
+                const description = document.createElement('p');
+                description.innerHTML = data.description; // Set HTML from JSON
+                footerContainer.appendChild(description);
+
+                // Load validation tools
                 data.validationTools.forEach(tool => {
-                    const toolLink = document.createElement('a');
-                    toolLink.href = tool.url;
+                    const a = document.createElement('a');
+                    a.href = tool.url;
                     const img = document.createElement('img');
                     img.src = tool.img;
                     img.alt = tool.alt;
-                    img.style.border = "0";
-                    img.style.width = "88px";
-                    img.style.height = "31px";
-                    toolLink.appendChild(img);
-                    footerContainer.appendChild(toolLink);
-                    footerContainer.appendChild(document.createTextNode(" || "));
+                    img.style = "border:0;width:88px;height:31px";
+                    a.appendChild(img);
+                    footerContainer.appendChild(a);
                 });
 
-                // Process actions
+                // Load actions
                 data.actions.forEach(action => {
                     const button = document.createElement('button');
+                    button.type = 'button';
                     button.textContent = action.label;
-                    button.onclick = () => eval(action.action); // Use eval to run the action code
+                    button.onclick = new Function(action.action);
                     footerContainer.appendChild(button);
                 });
-
-                // Optionally remove the last separator for aesthetics
-                if (footerContainer.lastChild.nodeValue === " || ") {
-                    footerContainer.removeChild(footerContainer.lastChild);
-                }
             })
             .catch(error => console.error("Error loading footer data:", error));
     }
 });
-function appendLinks(items, container) {
-    items.forEach(item => {
-        const link = document.createElement("a");
-        link.href = item.url;
-        link.textContent = item.name;
-        container.appendChild(link);
-        container.appendChild(document.createTextNode(" || "));
-    });
-    // Optionally remove the last separator
-    if (container.lastChild.nodeValue === " || ") {
-        container.removeChild(container.lastChild);
-    }
-}
-
