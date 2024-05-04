@@ -1,0 +1,26 @@
+
+{
+    "links": [
+      {"name": "UNC Charlotte", "url": "http://webpages.uncc.edu/dtekin1"},
+      {"name": "GitHub", "url": "http://www.github.com/derintekin/derintekin.github.io"},
+      {"name": "GitHub Pages", "url": "http://derintekin.github.io"},
+      {"name": "Course GitHub Pages", "url": "http://derintekin.github.io/itis3135"},
+      {"name": "freeCodeCamp", "url": "http://www.freecodecamp.org/derintekin"},
+      {"name": "Codecademy", "url": "https://www.codecademy.com/profiles/deroli"},
+      {"name": "LinkedIn", "url": "https://www.linkedin.com/in/derintekin/"},
+      {"name": "Dainty Tiger Enterprises", "url": "/itis3135/daintytiger.com/index.html", "description": "Designed by Dainty Tiger Enterprises &copy; 2024, CERTIFIED IN Responsive Web Design and JavaScript", "certifications": [
+          {"name": "RWD", "url": "https://www.freecodecamp.org/certification/derintekin/responsive-web-design"},
+          {"name": "JavaScript", "url": "https://www.freecodecamp.org/certification/derintekin/javascript-algorithms-and-data-structures-v8"}
+        ]
+      }
+    ],
+    "validationTools": [
+      {"name": "HTML Validation", "url": "https://validator.w3.org/check?uri=referer", "img": "https://mytienhoang.github.io/itis3135/z_archives/html_validation.png", "alt": "Valid HTML!"},
+      {"name": "CSS Validation", "url": "https://jigsaw.w3.org/css-validator/check/referer", "img": "https://jigsaw.w3.org/css-validator/images/vcss", "alt": "Valid CSS!"},
+      {"name": "Accessibility Validation", "url": "https://wave.webaim.org/report#/", "img": "images/button_validation_wcag.png", "alt": "Valid Disability/Accessibility Design!"}
+    ],
+    "actions": [
+      {"function": "Remove CSS", "action": "document.querySelectorAll('link[rel=stylesheet]').forEach(function(e) {e.setAttribute('href', '');});", "label": "No CSS"}
+    ]
+  }
+  

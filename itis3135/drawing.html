@@ -8,16 +8,22 @@
     <link rel="stylesheet" href="styles/default.css">
 </head>
 <body>
-    <header>
-        <div data-include="components/header.html"></div>
+    <header id="nav-main">
+        <h1>Derin Tekin's Dainty Tiger || ITIS 3135</h1>
+
+        <!-- Main navigation will be loaded here -->
     </header>
+    <nav id="second-nav">
+        <!-- Second navigation will be loaded here -->
+    </nav>
     <main>
         <h2>Interactive Drawing Example</h2>
         <!-- The p5 sketch will render inside this main tag -->
     </main>
-    <footer>
-        <div data-include="components/footer.html"></div>
+    <footer id="footer-container">
+        <!-- Footer content will be loaded here -->
     </footer>
+    <script src="scripts/loadcontent.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/p5@1.8.0/lib/p5.js"></script>
     <script src="scripts/sketch.js"></script>
     <script src="scripts/HTMLInclude.min.js"></script>

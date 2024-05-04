@@ -1,0 +1,20 @@
+{
+    "mainNav": [
+        {"name": "Home", "url": "./"},
+        {"name": "Introduction", "url": "introduction.html"},
+        {"name": "Contract", "url": "contract.html"},
+        {"name": "About the Dainty Tiger", "url": "about.html"},
+        {"name": "Dainty Tiger Home Page", "url": "firmhome.html"},
+        {"name": "Employee Tables", "url": "tables.html"},
+        {"name": "Form", "url": "form.html"},
+        {"name": "Client Project", "url": "project/index.html"},
+        {"name": "First JavaScript", "url": "firstscripts.html"},
+        {"name": "Build Your Own Intro", "url": "buildintro.html"},
+        {"name": "Calculator", "url": "calculator_try.html"},
+        {"name": "Arrays", "url": "arrays.html"},
+        {"name": "Drawing", "url": "drawing.html"}
+    ],
+    "secondNav": [
+        {"name": "Crappy", "url": "stuff/crap.html"}
+    ]
+}

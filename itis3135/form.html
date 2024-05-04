@@ -10,10 +10,14 @@
 </head>
 
 <body>
-    <header>
-        <div data-include="components/header.html"></div>
+    <header id="nav-main">
+        <h1>Derin Tekin's Dainty Tiger || ITIS 3135</h1>
 
+        <!-- Main navigation will be loaded here -->
     </header>
+    <nav id="second-nav">
+        <!-- Second navigation will be loaded here -->
+    </nav>
 
     <main>
         <h2>Contact Us</h2>
@@ -53,11 +57,10 @@
         </form>
     </main>
 
-    <footer>
-        <div data-include="components/footer.html"></div>
+    <footer id="footer-container">
+        <!-- Footer content will be loaded here -->
     </footer>
-
-
+    <script src="scripts/loadcontent.js"></script>
     <script>
         document.getElementById("validation_link_html").setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
         document.getElementById("validation_link_css").setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);

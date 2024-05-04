@@ -1,39 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Dainty Tiger</title>
     <link rel="stylesheet" href="styles/default.css">
 </head>
-
 <body>
-    <header>
-        <div data-include="components/header.html"></div>
-        <p>
-            <em>"Bringing your digital interactions to life, one pet at a time."</em>
-        </p>
-
+    <header id="nav-main">
+        <!-- Dynamic header content will be loaded here -->
+       
     </header>
-    </header>
-
+    <p><em>"Bringing your digital interactions to life, one pet at a time."</em></p>
+    
     <main>
         <h2>About Us</h2>
-        <p>At Dainty Tiger, we blend technology with creativity to create interactive web-based experiences that focus
-            on virtual pet interactions. Whether it's for educational purposes, digital marketing, or just for fun, our
-            projects engage users by allowing them to care for and interact with digital creatures in a meaningful way.
-        </p>
+        <p>At Dainty Tiger, we blend technology with creativity to create interactive web-based experiences that focus on virtual pet interactions. Whether it's for educational purposes, digital marketing, or just for fun, our projects engage users by allowing them to care for and interact with digital creatures in a meaningful way.</p>
     </main>
 
-    <footer>
-        <div data-include="components/footer.html"></div>
+    <footer id="footer-container">
+        <!-- Dynamic footer content will be loaded here -->
     </footer>
-    <script>
-        document.getElementById("validation_link_html").setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
-        document.getElementById("validation_link_css").setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
-    </script>
-    <script src="scripts/HTMLInclude.min.js"></script>
-</body>
 
+    <script src="scripts/loadcontent.js"></script>
+</body>
 </html>
