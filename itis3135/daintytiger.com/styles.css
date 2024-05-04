@@ -1,13 +1,13 @@
 body {
     font-family: Arial, sans-serif;
-    color: #4A235A; /* Soft purple for text */
-    background-color: #FAEBEFFF; /* Soft pink background */
+    color: #4A235A; 
+    background-color: #FAEBEFFF; 
     margin: 0;
     padding: 0;
 }
 header {
-    background-color: #6C3483; /* Deeper purple for header background */
-    color: #FADBD8FF; /* Very soft pink for header text */
+    background-color: #6C3483; 
+    color: #FADBD8FF;
     padding: 20px;
     text-align: center;
     position: relative;
@@ -29,11 +29,11 @@ ul {
 ul li:before {
     content: '✓';
     margin-right: 5px;
-    color: #D7BDE2FF; /* Soft purple */
+    color: #D7BDE2FF;
 }
 footer {
-    background-color: plum; /* Deeper purple to match the header */
-    color: #FADBD8FF; /* Soft pink text for contrast */
+    background-color: plum; 
+    color: #FADBD8FF; 
     text-align: center;
     padding: 10px;
     position: fixed;
@@ -41,7 +41,7 @@ footer {
     width: 100%;
 }
 form {
-    background-color: #FEF9E7FF; /* Soft yellowish background for forms */
+    background-color: #FEF9E7FF; 
     padding: 20px;
     margin-top: 20px;
     border-radius: 8px;
@@ -51,16 +51,16 @@ input, select, button {
     padding: 10px;
     margin-top: 5px;
     border-radius: 5px;
-    border: 1px solid #A9CCE3FF; /* Soft blue border */
+    border: 1px solid #A9CCE3FF;
     width: 90%;
 }
 button {
-    background-color: #a67cb6; /* Soft purple for buttons */
+    background-color: #a67cb6; 
     color: white;
     cursor: pointer;
 }
 button:hover {
-    background-color: #884EA0; /* Slightly darker purple on hover */
+    background-color: #884EA0; 
 }
 a{
     color: rgb(130, 57, 5);

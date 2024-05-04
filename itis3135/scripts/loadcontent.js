@@ -20,7 +20,6 @@ document.addEventListener("DOMContentLoaded", function() {
             container.appendChild(link);
             container.appendChild(document.createTextNode(" || "));
         });
-        // Optionally remove the last separator
         if (container.lastChild.nodeValue === " || ") {
             container.removeChild(container.lastChild);
         }
@@ -32,7 +31,6 @@ document.addEventListener("DOMContentLoaded", function() {
             .then(data => {
                 const footerContainer = document.getElementById('footer-container');
 
-                // Load links
                 data.links.forEach(link => {
                     const a = document.createElement('a');
                     a.href = link.url;
@@ -41,12 +39,10 @@ document.addEventListener("DOMContentLoaded", function() {
                     footerContainer.appendChild(document.createTextNode(" || "));
                 });
 
-                // Load description with embedded links
                 const description = document.createElement('p');
-                description.innerHTML = data.description; // Set HTML from JSON
+                description.innerHTML = data.description; 
                 footerContainer.appendChild(description);
 
-                // Load validation tools
                 data.validationTools.forEach(tool => {
                     const a = document.createElement('a');
                     a.href = tool.url;
@@ -58,7 +54,6 @@ document.addEventListener("DOMContentLoaded", function() {
                     footerContainer.appendChild(a);
                 });
 
-                // Load actions
                 data.actions.forEach(action => {
                     const button = document.createElement('button');
                     button.type = 'button';
