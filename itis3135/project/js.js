@@ -39,5 +39,26 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 }
+// products.js
+let cart = {};
+
+function addToCart(productName) {
+    if (cart[productName]) {
+        cart[productName].quantity += 1;
+    } else {
+        cart[productName] = { quantity: 1 };
+    }
+    updateCartCount();
+}
+
+function updateCartCount() {
+    let totalCount = Object.values(cart).reduce((acc, item) => acc + item.quantity, 0);
+    document.getElementById('cart-count').innerText = totalCount;
+}
+
+function showCart() {
+    alert(JSON.stringify(cart, null, 2));
+}
+
 
   

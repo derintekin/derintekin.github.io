@@ -78,6 +78,41 @@ footer a:hover {
 body {
   background-color: lightcyan;
 }
+/* styles.css */
+.product-container, .service-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.product, .service {
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 20px;
+  margin: 20px;
+  width: 300px;
+}
+
+.cart-icon {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.cart-icon span {
+  background-color: lightblue;
+  color: white;
+  padding: 0 5px;
+  border-radius: 50%;
+}
+
+.product img, .service img {
+  width: 100%;       /* Ensures the image takes the full width of the container */
+  height: 150px;     /* Fixed height, adjust as needed */
+  object-fit: cover; /* Covers the area without distorting the aspect ratio */
+  border-radius: 5px; /* Optional: Rounds the corners of the images */
+}
 
 
 

@@ -11,7 +11,7 @@
 <body>
     <header>
         <div class="logo">
-            <a href="index.html"><img src="pronova.png" alt="Pronova Logo" style="height: 50px;"></a>
+            <a href="index.html"><img src="images/pronova.png" alt="Pronova Logo" style="height: 50px;"></a>
         </div>
         <h1>Pronova Hydroponics</h1>
         <nav>
@@ -24,36 +24,49 @@
     </header>
 
     <main>
-        <h2>Our Products</h2>
-        <section class="products">
-            <a href="automated-nutrient-delivery.html">
-                <img src="automated-delivery.jpeg" alt="Automated Nutrient Delivery Systems">
-                <p>Our automated nutrient delivery system ensures precise and efficient distribution of nutrients to
-                    your hydroponic plants. With customizable settings and real-time monitoring capabilities, it
-                    optimizes plant growth while minimizing waste. </p>
-            </a>
-            <a href="Smart pH Monitoring System.html">
-                <img src="smart-monitoring.jpeg" alt="Smart pH Monitoring System">
-                <p>Our smart pH monitoring device provides accurate and continuous monitoring of pH levels in your
-                    hydroponic system. It offers real-time alerts and data visualization, allowing you to maintain
-                    optimal pH conditions for healthy plant growth with ease.</p>
-            </a>
-            <a href="LED-grow-lights.html">
-                <img src="led.jpeg" alt="Product 1">
-                <p>Our LED grow lights feature advanced spectrum control technology, allowing you to customize light
-                    wavelengths to match specific plant growth stages. With energy-efficient design and precise light
-                    output, they promote robust growth and maximize yields in your hydroponic setup.</p>
-            </a>
-            <a href="At Home Hydroponics.html">
-                <img src="hydro-kitche2.jpeg" alt="At Home Hydroponic">
-                <p>Transform your living space into a lush, green oasis with our Home Hydroponic Starter Kit. Perfect
-                    for beginners and seasoned gardeners alike, this compact and user-friendly system brings the joys of
-                    hydroponic gardening right to your home.
+        <div class="cart-icon" onclick="showCart()">🛒 <span id="cart-count">0</span></div>
+        <div class="product-container">
+            <!-- Hydroponic Starter Kit -->
+            <div class="product">
+                <img src="images/starterkit.png" alt="Hydroponic Starter Kit">
 
-                </p>
-            </a>
-
-        </section>
+                <h3>Hydroponic Starter Kit</h3>
+                <p>A complete kit containing everything you might need to start your own hydroponic system at home!</p>
+                <label for="seed-select">Choose your seeds:</label>
+                <select id="seed-select" onchange="addToCart('Hydroponic Starter Kit', this.value)">
+                    <option value="Tomato">Tomato</option>
+                    <option value="Lettuce">Lettuce</option>
+                    <option value="Peppers">Peppers</option>
+                </select>
+                <button onclick="addToCart('Hydroponic Starter Kit', document.getElementById('seed-select').value)">Add to Cart</button>
+            </div>
+            
+            <!-- LED Grow Lights -->
+            <div class="product">
+                <img src="images/led.jpeg" alt="Led Grow Lights">
+                <h3>LED Grow Lights</h3>
+                <p>High-Quality LED grow lights designed specifically for hydroponic systems, providing optimal light spectrum for plant growth.</p>
+                <button onclick="addToCart('LED Grow Lights')">Add to Cart</button>
+            </div>
+            
+            <!-- pH Testing Kit -->
+            <div class="product">
+                <img src="images/ph.png" alt="pH Testing Kit">
+                <h3>pH Testing Kit</h3>
+                <p>Maintaining the pH of a hydroponic system is essential. This kit includes pH testing strips and a digital pH meter.</p>
+                <button onclick="addToCart('pH Testing Kit')">Add to Cart</button>
+            </div>
+            
+            <!-- Vertical Hydroponic System -->
+            <div class="product">
+                <img src="images/verticalflowers.png" alt="Vertical Hydroponic System">
+                <h3>Vertical Hydroponic System</h3>
+                <p>Space-saving hydroponic system, ideal for anyone with limited space.</p>
+                <button onclick="addToCart('Vertical Hydroponic System')">Add to Cart</button>
+            </div>
+        </div>
+    
+        <script src="products.js"></script>
     </main>
 
     <footer>
