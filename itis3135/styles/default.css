@@ -119,5 +119,56 @@ legend {
         width: 60%;
     }
 }
+#slideshow {
+    position: relative;
+    width: 100%;
+    max-width: 800px; /* Adjust based on your layout */
+    margin: auto;
+}
+
+#slideshow .slide {
+    display: none; /* Hide all slides by default */
+    position: relative;
+}
+
+#slideshow .active {
+    display: block; /* Only display the active slide */
+}
+
+.slide img {
+    width: 100%; /* Full width images */
+}
+
+#slide-thumbs {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#slide-thumbs img {
+    width: 100px; /* Smaller thumbnails */
+    cursor: pointer;
+    margin: 5px;
+    border: 2px solid transparent;
+}
+
+#slide-thumbs img:hover {
+    border-color: blue; /* Highlight on hover */
+}
+
+.caption {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+}
+#slideshow .slide {
+    display: none; /* Hide all slides by default */
+}
+#slideshow .active {
+    display: block; /* Only display the active slide */
+}
+
 
 
