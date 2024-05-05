@@ -38,7 +38,7 @@ section a:hover {
 }
 
 .about-projects img, .products-products img, main img, .founder img, section img {
-  width: 60%;
+  width: 40%;
   height: auto;
   margin: auto;
   border-radius: 3px;
