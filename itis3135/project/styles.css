@@ -115,3 +115,8 @@ section {
   flex: 1;
   text-align: center;
 }
+.founder-section img {
+  width: 30%; 
+  height: auto;
+}
+
