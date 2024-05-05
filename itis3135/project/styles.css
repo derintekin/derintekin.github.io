@@ -83,6 +83,7 @@ section a:hover {
 
 section {
   border: 1px solid #ccc;
+  background-color: #ccc;
   padding: 20px;
   margin-bottom: 20px;
   text-align: center;
@@ -119,4 +120,36 @@ section {
   width: 30%; 
   height: auto;
 }
+.founder-link {
+  text-decoration: none;
+}
 
+.founder-section a {
+  text-decoration: none;
+}
+.cart-icon-link {
+  text-decoration: none; /* Removes underline from the link */
+  color: inherit; /* Ensures the link color matches the surrounding text or specified style */
+}
+
+.cart-icon {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  font-size: 24px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  background-color: lightblue; /* Example of setting a background */
+  color: white;
+  padding: 5px 10px;
+  border-radius: 50%;
+}
+
+.cart-icon span {
+  margin-left: 5px;
+  background-color: #fff;
+  color: #333;
+  border-radius: 50%;
+  padding: 0 5px;
+}
