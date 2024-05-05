@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact Us - Hydroponic Solutions</title>
   <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
   <header>
     <div class="logo">
@@ -15,59 +13,33 @@
       <h1>Pronova Hydroponics</h1>
     </div>
     <nav>
-
       <a href="index.html">Home</a>
       <a href="about.html">About Us</a>
       <a href="services.html">Services</a>
       <a href="products.html">Products</a>
       <a href="contact.html">Contact Us</a>
-  </nav>
+    </nav>
   </header>
   <main>
     <h1>Contact Us</h1>
     <p>Have a question or need assistance with your hydroponic system? Get in touch with us using the form below:</p>
-    <form id="contactForm">
-      <label for="name">Name:</label><br>
-      <input type="text" id="name" name="name"><br>
-      <label for="email">Email:</label><br>
-      <input type="email" id="email" name="email"><br>
-      <label for="message">Message:</label><br>
-      <textarea id="message" name="message" rows="4"></textarea><br>
-      <input type="button" value="Submit" onclick="sendFormData()">
+    <form id="contactForm" method="post" action="https://register-demo.freecodecamp.org">
+      <label for="name">Name:<br>
+        <input type="text" id="name" name="name" required>
+      </label><br>
+      <label for="email">Email:<br>
+        <input type="email" id="email" name="email" required>
+      </label><br>
+      <label for="message">Message:<br>
+        <textarea id="message" name="message" rows="4" required></textarea>
+      </label><br>
+      <input type="submit" value="Submit">
     </form>
-    <div id="confirmationBanner" style="display:none;">
-        <img src="checkmark.png" alt="Checkmark" style="vertical-align: middle;">
-        <span>Your request has been submitted.</span>
-    </div>
-
-    <footer>
-      <p>© 2024 <a href="https://www.pronova.com.tr/">Pronova </a>Hydroponics. All rights reserved.</p>
-      <p><a href="#">HTML Validation Link</a> | <a href="#">CSS Validation Link</a></p>
-    </footer>
-  
-    
-    <script>
-      function sendFormData() {
-        var formData = {
-          name: document.getElementById('name').value,
-          email: document.getElementById('email').value,
-          message: document.getElementById('message').value
-        };
-        $.ajax({
-          url: 'submit.php',
-          type: 'POST',
-          data: formData,
-          success: function(response) {
-            alert('Form submitted successfully!');
-          },
-          error: function() {
-            alert('An error occurred.');
-          }
-        });
-      }
-    </script>
-</main>
+  </main>
+  <footer>
+    <p>© 2024 <a href="https://www.pronova.com.tr/">Pronova</a> Hydroponics. All rights reserved.</p>
+    <p><a href="#">HTML Validation Link</a> | <a href="#">CSS Validation Link</a></p>
+  </footer>
   <script src="script.js"></script>
 </body>
-
 </html>
