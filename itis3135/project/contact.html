@@ -23,7 +23,7 @@
   <main>
     <h1>Contact Us</h1>
     <p>Have a question or need assistance with your hydroponic system? Get in touch with us using the form below:</p>
-    <form id="contactForm" method="post" action="submit.php">
+    <form id="contactForm" onsubmit="handleFormSubmission(event)">
       <label for="name">Name:<br>
         <input type="text" id="name" name="name" required>
       </label><br>
@@ -35,11 +35,20 @@
       </label><br>
       <input type="submit" value="Submit">
     </form>
+    <div id="confirmationBanner" style="display:none; color: green; font-size: 16px; margin-top: 20px;">
+      Your request has been submitted. Thank you!
+    </div>
   </main>
   <footer>
     <p>© 2024 <a href="https://www.pronova.com.tr/">Pronova</a> Hydroponics. All rights reserved.</p>
     <p><a href="#">HTML Validation Link</a> | <a href="#">CSS Validation Link</a></p>
   </footer>
-  <script src="script.js"></script>
+  <script>
+    function handleFormSubmission(event) {
+      event.preventDefault(); // Prevent the form from submitting traditionally
+      document.getElementById('contactForm').reset(); // Reset the form to clear inputs
+      document.getElementById('confirmationBanner').style.display = 'block'; // Show confirmation message
+    }
+  </script>
 </body>
 </html>
