@@ -1,84 +1,51 @@
 body {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  background-color: #f4f4f4;
+  background-color: lightcyan;
   color: rgb(97, 96, 96);
 }
+
 header, footer {
   background-color: rgb(147, 229, 147);
   color: white;
   padding: 10px 20px;
   text-align: center;
 }
+
 nav {
   background-color: green;
   color: white;
   padding: 10px 20px;
   text-align: center;
 }
-nav a {
+
+nav a, footer a {
   color: white;
+  text-decoration: none;
   padding: 0 15px;
-  text-decoration: none;
-}
-section a {
-  color: #00a3cc; /* Change link color */
-  text-decoration: none; 
-  font-weight: bold; 
 }
 
-/* CSS for link hover effect within section elements */
-section a:hover {
-  color: #004080; /* Change color on hover */
-}
-
-.about-projects img {
-  width: 60%; 
-  height: auto;
-  margin: auto;
-  border-radius: 3px; 
-  align-items: center;
-  display: inline-block;
-}
-
-.products-products img{
-  width: 60%; 
-  height: auto;
-  margin: auto;
-  border-radius: 3px; 
-  align-items: center;
-  display: inline-block;
-
-}
-#confirmationBanner {
-  background-color: #4CAF50; /* Green background */
-  color: white;
-  padding: 10px;
-  position: fixed;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
-  display: flex;
-  align-items: center;
-}
-#confirmationBanner img {
-  margin-right: 10px;
-}
-
-footer a {
-  color: #4CAF50;
-  text-decoration: none;
-
-
-}
 footer a:hover {
-  color: #3C8D40; 
+  color: #3C8D40;
 }
-body {
-  background-color: lightcyan;
+
+section a {
+  color: #00a3cc;
+  font-weight: bold;
 }
-/* styles.css */
+
+section a:hover {
+  color: #004080;
+}
+
+.about-projects img, .products-products img, main img, .founder img, section img {
+  width: 60%;
+  height: auto;
+  margin: auto;
+  border-radius: 3px;
+  align-items: center;
+  display: inline-block;
+}
+
 .product-container, .service-container {
   display: flex;
   flex-wrap: wrap;
@@ -108,10 +75,10 @@ body {
 }
 
 .product img, .service img {
-  width: 100%;       /* Ensures the image takes the full width of the container */
-  height: 150px;     /* Fixed height, adjust as needed */
-  object-fit: cover; /* Covers the area without distorting the aspect ratio */
-  border-radius: 5px; /* Optional: Rounds the corners of the images */
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 5px;
 }
 
 section {
@@ -121,56 +88,30 @@ section {
   text-align: center;
 }
 
-section img {
-  max-width: 80%;
-  height: auto;
+#confirmationBanner {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  display: flex;
+  align-items: center;
 }
 
-.founder img {
-  max-width: 200px; /* Set the maximum width of the image */
-  height: auto;
+#confirmationBanner img {
+  margin-right: 10px;
 }
-/* styles.css */
+
 .founder-section {
-  display: flex; /* Use flexbox for layout */
-  align-items: center; /* Center vertically */
+  display: flex;
+  align-items: center;
 }
 
-.founder-text {
-  flex: 1; /* Take up remaining space */
-}
-
-.founder-image {
+.founder-text, .founder-image {
   flex: 1;
-  text-align: center; /* Take up remaining space */
-}
-
-.founder-image img {
-  max-width: 100%; /* Ensure image fits container */
-  height: auto;
-}
-
-/* styles.css */
-section {
-  border: 1px solid #ccc;
-  padding: 20px;
-  margin-bottom: 20px;
   text-align: center;
 }
-
-section img {
-  max-width: 100%; /* Ensure images fit container */
-  height: auto;
-}
-
-/* Adjusting the size of the images within sections */
-section img {
-  width: 200px; /* Set a fixed width for all images */
-  height: auto; /* Maintain aspect ratio */
-}
-
-
-
-
-
-
