@@ -114,6 +114,43 @@ body {
   border-radius: 5px; /* Optional: Rounds the corners of the images */
 }
 
+section {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+section img {
+  max-width: 80%;
+  height: auto;
+}
+
+.founder img {
+  max-width: 200px; /* Set the maximum width of the image */
+  height: auto;
+}
+/* styles.css */
+.founder-section {
+  display: flex; /* Use flexbox for layout */
+  align-items: center; /* Center vertically */
+}
+
+.founder-text {
+  flex: 1; /* Take up remaining space */
+}
+
+.founder-image {
+  flex: 1;
+  text-align: center; /* Take up remaining space */
+}
+
+.founder-image img {
+  max-width: 100%; /* Ensure image fits container */
+  height: auto;
+}
+
+
 
 
 
