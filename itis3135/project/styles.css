@@ -150,6 +150,26 @@ section img {
   height: auto;
 }
 
+/* styles.css */
+section {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+section img {
+  max-width: 100%; /* Ensure images fit container */
+  height: auto;
+}
+
+/* Adjusting the size of the images within sections */
+section img {
+  width: 200px; /* Set a fixed width for all images */
+  height: auto; /* Maintain aspect ratio */
+}
+
+
 
 
 
